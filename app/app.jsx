@@ -5,6 +5,8 @@ var Main = require('Main');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
+var WeatherForm = require('WeatherForm');
+var WeatherMessage = require('WeatherMessage');
 
 ReactDOM.render(
   <Router history={hashHistory}>
