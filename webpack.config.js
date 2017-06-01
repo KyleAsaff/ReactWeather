@@ -4,6 +4,9 @@ module.exports = {
     path: __dirname,
     filename: './public/bundle.js'
   },
+  devServer: {
+    headers: { "Access-Control-Allow-Origin": "*" }
+  },
   resolve: {
     root: __dirname,
     alias: {
@@ -13,7 +16,8 @@ module.exports = {
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
       WeatherForm: 'app/components/WeatherForm.jsx',
-      WeatherMessage: 'app/components/WeatherMessage.jsx'
+      WeatherMessage: 'app/components/WeatherMessage.jsx',
+      openWeatherMap: 'app/api/openWeatherMap.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },
