@@ -4,9 +4,7 @@ module.exports = {
     path: __dirname,
     filename: './public/bundle.js'
   },
-  devServer: {
-    headers: { "Access-Control-Allow-Origin": "*" }
-  },
+  devtool: 'cheap-module-eval-source-map',
   resolve: {
     root: __dirname,
     alias: {
