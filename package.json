@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "webpack ./public/bundle.js"
+    "postinstall": "webpack -p"
   },
   "author": "Andrew Mead",
   "license": "MIT",
@@ -16,7 +16,8 @@
     "express": "^4.13.4",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-router": "^2.0.0"
+    "react-router": "^2.0.0",
+    "webpack": "^1.12.13"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
